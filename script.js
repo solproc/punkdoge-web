@@ -1,4 +1,11 @@
 // script.js
+
+function scrollCarousel(direction) {
+  const track = document.getElementById("carouselTrack");
+  const scrollAmount = 180; // one image width + gap
+  track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".glitch-text");
   header.addEventListener("mouseenter", () => {
@@ -15,9 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add actual minting code using Web3.js or ethers.js here for wallet interaction
   });
+   
 });
-function scrollCarousel(direction) {
-  const track = document.getElementById("carouselTrack");
-  const scrollAmount = 180; // one image width + gap
-  track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
-}
+  
