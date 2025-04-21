@@ -87,6 +87,55 @@ a {
   text-decoration: none;
 }
 
+/* A carousel */
+
+.carousel {
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.carousel-track img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 2px solid #444;
+  background: #000;
+}
+
+.carousel-btn {
+  background: #111;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: #444;
+}
+
+/* A carousel */
 
 li {
   margin-bottom: 0.5rem;
