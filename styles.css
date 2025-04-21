@@ -87,15 +87,6 @@ a {
   text-decoration: none;
 }
 
-.community a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #ff00ff; /* example hover color */
-}
-
 
 li {
   margin-bottom: 0.5rem;
